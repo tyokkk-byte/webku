@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto as the primary font */
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #333;
+}    
+
+/* Specific Styles for Home Page */
+.home {
+    background-image: url('gambar.imk/lawang sewu.jpg'); /* Background for homepage */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 50vh; /* Make background cover 50% of the viewport height */
+    width: 100%; /* Make it span the full width of the page */
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 1800px;
+    margin: auto;
+    color: #000; /* Set text color to black for all text inside the container */
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 123, 255, 0.8); /* Blue background with some transparency */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for header */
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em; /* Larger, more prominent title */
+    letter-spacing: 2px; /* Slight letter spacing for elegance */
+    text-transform: uppercase; /* Capitalized title */
+    font-family: 'Roboto', sans-serif; /* Use Roboto for the header */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow to make it pop */
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #080303;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase; /* Uppercase for navigation links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight links with a yellow color on hover */
+}
+
+/* Main Section Styles */
+main section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for the subtitle */
+    letter-spacing: 1px;
+}
+
+main p {
+    font-size: 1.1em;
+    color: #555; /* Slightly lighter color for paragraphs */
+    line-height: 1.8;
+}
+
+/* Image Styling */
+img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around images */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: rgba(51, 51, 51, 0.8); /* Dark footer with some transparency */
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for the footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em; /* Slightly smaller font size for footer text */
+    color: #ccc; /* Lighter color for footer text */
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+    /* Home Section */
+    .home {
+        height: 40vh; /* Reduce height of background image on mobile */
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 2em; /* Adjust header size on smaller screens */
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical space between links */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Make navigation font smaller on mobile */
+    }
+
+    /* Main Section */
+    main h2 {
+        font-size: 1.8em; /* Make subtitle smaller */
+    }
+
+    main p {
+        font-size: 1em; /* Adjust font size of paragraph */
+        padding: 0 10px; /* Add some padding for better readability */
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.8em; /* Make footer font size smaller */
+    }
+
+    /* Images */
+    img {
+        max-width: 100%; /* Make images take up full width on mobile */
+    }
+}
+
+/* Responsive Styles for Smaller Devices (Phones in Portrait Mode) */
+@media screen and (max-width: 480px) {
+    .home {
+        height: 30vh; /* Further reduce background image height */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Make header font size smaller */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce spacing between navigation items */
+    }
+
+    main h2 {
+        font-size: 1.6em; /* Make subtitle smaller */
+    }
+
+    main p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+
+    footer p {
+        font-size: 0.75em; /* Make footer text even smaller */
+    }
+}
+
